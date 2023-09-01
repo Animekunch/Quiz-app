@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <!-- start section -->
+      <div id="start">Start Quiz</div>
+      <!-- instructions-->
+      <div id="instructions">
+        <h2>Instructions</h2>
+        <h4>1. You have 20 seconds for each question.</h4>
+        <h4>2. Answers cannot be change when selected.</h4>
+        <h4>3. You get points when answers are corect.</h4>
+        <h4>4. Exit any time</h4>
+        <div id="button">
+          <button id="Exit">Exit</button>
+          <button id="continue">continue</button>
+        </div>
+      </div>
+      <!-- Quiz Section-->
+      <div id="quiz">
+        <div id="quiz_header">
+          <h5>Quiz App</h5>
+          <div id="timer">
+            <h6>Time Left</h6>
+            <h6 id="time">00</h6>
+          </div>
+        </div>
+        <!-- Quiz Questions-->
+        <div id="questions">
+          <h2 id="questionNo"></h2>
+          <h2 id="questionText"></h2>
+        </div>
+        <!--quiz choices-->
+        <div id="optionList">
+          <h4 class="choices" id="option1"></h4>
+          <h4 class="choices" id="option2"></h4>
+          <h4 class="choices" id="option3"></h4>
+          <h4 class="choices" id="option4"></h4>
+        </div>
+        <!-- Answer Section-->
+        <div id="answerSection">
+          <h3 id="total_correct"></h3>
+          <div id="decision">
+            <h4 id="next_question">Next</h4>
+            <h4><button id="reset_quiz">Reset</button></h4>
+          </div>
+        </div>
+      </div>
+      <!--result-->
+      <div id="result">
+        <img src="trophy.gif" alt="trophy" />
+        <h6>Completed</h6>
+        <h6 id="points"></h6>
+        <button id="quit">Quit Quiz</button>
+        <button id="startAgain">Start again</button>
+      </div>
+      <!--end-->
+      <div id="end">The End</div>
+    </div>
+    <script src="script/script.js"></script>
+  </body>
+</html>
